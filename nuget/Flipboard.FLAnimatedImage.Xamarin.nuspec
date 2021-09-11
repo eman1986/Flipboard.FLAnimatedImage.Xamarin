@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Flipboard.FLAnimatedImage.Xamarin</id>
+    <version>1.0.16</version>
+    <title>Flipboard.FLAnimatedImage.Xamarin</title>
+    <description>Xamarin.ios Binding for FLAnimatedImage</description>
+    <summary>Xamarin.ios Binding for FLAnimatedImage</summary>
+    <authors>Ed Lomonaco</authors>
+    <owners>Ed Lomonaco</owners>
+    <projectUrl>https://github.com/eman1986/Flipboard.FLAnimatedImage.Xamarin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <tags>xamarin, ios, xamarin.ios, FLAnimatedImage</tags>
+    <dependencies>
+        <group targetFramework="Xamarin.iOS1.0">
+        </group>
+    </dependencies>
+    <releaseNotes>
+        Based off of FLAnimatedImage 1.0.16
+    </releaseNotes>
+    </metadata>
+    <files>
+        <file src="bin\Release\Flipboard.FLAnimatedImage.Xamarin.dll" target="lib\xamarinios10" />
+        <file src="bin\Release\Flipboard.FLAnimatedImage.Xamarin.pdb" target="lib\xamarinios10" />
+    </files>
+</package>
