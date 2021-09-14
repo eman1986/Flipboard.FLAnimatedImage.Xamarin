@@ -14,7 +14,7 @@ namespace ExampleApp
 	{
 		[Outlet]
 		Flipboard.FLAnimatedImage.Xamarin.FLAnimatedImageView ivGif { get; set; }
-		
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (ivGif != null) {

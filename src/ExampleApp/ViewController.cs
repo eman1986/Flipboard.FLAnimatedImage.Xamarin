@@ -16,13 +16,33 @@ namespace ExampleApp
 
             base.ViewDidLoad();
 
+            try
+            {
+                // var urlString = "https://c.tenor.com/GZw_HxkxMl4AAAAC/betty-white-it-works.gif";
+                // var url = new NSUrl(urlString);
+                //var imageData = NSData.FromUrl(url);
 
-            var urlString = "https://c.tenor.com/GZw_HxkxMl4AAAAC/betty-white-it-works.gif";
-            var url = new NSUrl(urlString);
-            var imageData = NSData.FromUrl(url);
-            var imageData3 = new FLAnimatedImage(imageData);
+                // var path = NSBundle.MainBundle.PathForResource("success", "gif");
+                // var data = NSData.FromFile(path);
 
-            ivGif.AnimatedImage = imageData3;
+                var image = new FLAnimatedImage(NSData.FromUrl(NSUrl.FromString("https://c.tenor.com/GZw_HxkxMl4AAAAC/betty-white-it-works.gif")));
+                var aiv = new FLAnimatedImageView
+                {
+                    AnimatedImage = image
+                };
+
+                //View.AddSubview(aiv);
+
+                //ivGif = aiv;
+
+                ivGif.AnimatedImage = image;
+
+                //ivGif.SetImage(NSUrl.FromString("https://c.tenor.com/GZw_HxkxMl4AAAAC/betty-white-it-works.gif"), null, SDWebImageOptions.RefreshCached);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
 
         public override void DidReceiveMemoryWarning()

@@ -4,12 +4,6 @@ using System.Runtime.InteropServices;
 using Foundation;
 using ObjCRuntime;
 
-// This attribute allows you to mark your assemblies as “safe to link”.
-// When the attribute is present, the linker—if enabled—will process the assembly
-// even if you’re using the “Link SDK assemblies only” option, which is the default for device builds.
-[assembly: LinkerSafe]
-[assembly: LinkWith ("libFLAnimatedImage.a", LinkTarget.Simulator | LinkTarget.Arm64, ForceLoad = true, SmartLink=true, LinkerFlags = "-ObjC")]
-
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
