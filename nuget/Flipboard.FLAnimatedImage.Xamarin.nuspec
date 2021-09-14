@@ -21,7 +21,7 @@
     </releaseNotes>
     </metadata>
     <files>
-        <file src="bin\Release\Flipboard.FLAnimatedImage.Xamarin.dll" target="lib\xamarinios10" />
-        <file src="bin\Release\Flipboard.FLAnimatedImage.Xamarin.pdb" target="lib\xamarinios10" />
+        <file src="..\src\Flipboard.FLAnimatedImage.Xamarin\bin\Release\Flipboard.FLAnimatedImage.Xamarin.dll" target="lib\xamarinios10" />
+        <file src="..\src\Flipboard.FLAnimatedImage.Xamarin\bin\Release\Flipboard.FLAnimatedImage.Xamarin.pdb" target="lib\xamarinios10" />
     </files>
 </package>
